@@ -1,0 +1,114 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>Web Assignment</title>
+  	<link rel="stylesheet" type="text/css" href="mystyle.css"> 
+    <script src="javascript.js"></script>
+    </head>
+  <body>
+  	<div class="header">
+  <ul>
+   <!-- <li><a>Home</a></li> -->
+    <li><a>Auctions</a>
+    <ul>
+      <li><a>Todays Auction</a></li>
+    <li><a>Auctions Calendar</a></li>
+    <li><a>Join Auction</a></li>
+    </ul> </li>
+
+    <li><a>Sell a Vehicle</a>
+      <ul>
+        <li><a>For Individual</a></li>
+    <li><a>For business</a></li>
+    <li><a>For Dealer</a></li>
+      </ul>
+    </li>
+    <li><a>Find Vehicle</a>
+      <ul>
+        <li><a>Vehicle finder</a></li>
+        <li><a>Sales List</a></li>
+        <li><a>Watchlist</a></li>
+      </ul>
+    </li>
+    <li><a href="myform.html">Register</a></li>
+    <li><a>About Us</a></li>
+  </ul>
+</div>
+<p><br/></p>
+<p><br/></p>
+
+  <div class="row">
+    <h4>Hi welcome</h4>
+    <div class="column">
+      <h3 class="start">This is an onclick event</h3> 
+      <p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+<p id="demo"></p> <br>
+    </div>
+  <div class="column">
+<h3>THIS AN ONFOCUS EVENT</h3>
+Enter your name: <input type="text" onfocus="myfocus(this)">
+
+<p>Put the Cursor onto the input field and the background color will change</p><br>
+</div>
+<div class="column">
+<h3>ONBLUR EVENT</h3>
+<p> Enter your Firstname: <input type="text" id="fname" onblur="uper()"></p>
+<br>
+<p> Enter your Lastname: <input type="text" id="lname" onblur="uper()"></p>
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<br> </div>
+</div>
+<h3>ON CHANGE EVENT</h3>
+<p>Select a YOUR course from the list.</p>
+
+<select id="mySelect" onchange="change()">
+  <option value="BCOM">Bachelor of Commerce
+  <option value="BIT">Bachelor of IT
+  <option value="COMP SCIENCE">COMP SCIENCE
+  <option value="SOEN">SOEN
+</select>
+
+<p>Select a course.</p>
+
+<p id="demos"></p>
+
+
+<h3>THIS IS ONSUBMIT EVENT</h3>
+
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+<form action="/action_page.php" onsubmit="myFunction()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit"> </form>
+</div>
+
+<h3>ON MOUSE OVER & ON MOUSE OUT</h3>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="ex.jpeg" alt="Child" width="64" height="64">
+
+<p>when the user moves the mouse pointer over the image: The image size increases.</p>
+<p>when the mouse pointer is moved out of the image: The image size decreases.</p>
+
+<div class="notice">
+<h2>ADVERT</h2>
+<p>The AIS Organising Committee is seeking volunteers from the community to join the AIS Programme Committee.
+
+The programme committee is responsible for developing the agenda of the annual AIS event that includes the agenda of the AfNOG Conference and the AFRINIC Public Policy Meeting. </p>
+
+ 
+
+<h2>Eligibilty</h2> 
+<p>
+Anyone interested in Internet development and who is willing to volunteer some time and expertise to the  AIS event can apply. There are no restrictions, be it age, geography, stakeholder group, affiliation, etc</p>
+<h2>Deploy IPv6 Now</h2>
+<p>
+Africa has one of the world’s highest rates of mobile Internet users and a huge population of future Internet users waiting to get online. More and more IP addresses will be needed to facilitate Internet access across the region. As AFRINIC's supply of IPv4 address space continues to dwindle, new connections will increasingly be made over IPv6 as opposed to IPv4, especially in those regions where IPv4 address space has already been exhausted.
+
+By design, computers using IPv4 and IPv6 cannot communicate directly with each other. Devices connecting to the Internet with only an IPv4 address cannot communicate with devices that are connecting with only an IPv6 address. In order to ensure that networks continue to run seamlessly and all devices around the world can continue to communicate with each other, IPv6 must be deployed in parallel with IPv4. This means that IPv4 and IPv6 will coexist and be operated in parallel for the time it takes to fully deploy IPv6 on a global scale. It is now becoming imperative that African network operators also start the transition to IPv6 as soon as possible to ensure they can continue communicating with IPv4 and IPv6 networks in other regions. This is the only way to guarantee that all Internet users will be able to freely access the global Internet from Africa and to ensure that Africa remains a global player in online world.
+IPv4 Transfer
+
+Some of the other RIRs have policies in place that cater for transfer of IPv4 address space within, as well as to and from, their respective regions. Currently, there are no approved policies for the transfer of IPv4 address space allocated by AFRINIC, either within or in/out of the AFRINIC region. Please see our Policy Proposal page for more information about proposals currently under discussion.</p></div>
+  </body>
+  </html>

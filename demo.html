@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>COMP 307 FORM VALIDATION</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="javas.js"></script>
+</head>
+<body onload="document.registration.FirstName.focus();">
+
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+	
+  <form name="registration"  onSubmit="return formValidation();" >
+  	<div class="input-group">
+  	  <label>First Name</label>
+  	  <input type="text" name="userid" placeholder="Enter your userid">
+  	</div>
+    <div class="input-group">
+      <label>Last Name</label>
+      <input type="text" name="username" placeholder="Enter your Your prefferd username">
+    </div>
+    <div class="input-group"><label>Phone Number</label>
+      <input type="tel" name="Phone_number" placeholder="Enter your Phone number +254">
+    </div>
+    <div class="input-group">
+      <label for="country">Country:</label></li>
+<select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="KE">Kenya</option>
+<option value="UG">Uganda</option>
+<option value="TZ">Tanzania</option>
+<option value="RW">Rwanda</option>
+<option value="SM">Somalia</option>
+<option value="ET">Ethipoia</option>
+</select>
+    </div>
+    <div class="input-group">
+      <label>Zip</label>
+      <input type="text" name="Zip" placeholder="Enter Your Zip code">
+    </div>
+
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" placeholder="Enter your Email">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="Passid">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="ConfirmPassword">
+  	</div>
+    <div>
+      <input type="radio" name="Gender" value="male"> Male<br>
+  <input type="radio" name="Gender" value="female"> Female<br>
+  <input type="radio" name="Gender" value="other"> Other<br><br>
+    </div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="Submit" >Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
+</body>
+</html>
